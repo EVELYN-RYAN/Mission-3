@@ -1,0 +1,33 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--title logo-->
+    <title>@ViewBag.title</title>
+    <link rel="icon" type="image/png" href="~/img/favicon.ico" />
+    <!--Style links-->
+    <link type="text/css" rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css/bootstrap.min.css">
+    <link href="~/css/alpha.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <header>
+        <a asp-controller="Home" asp-action="Index" class="btn-home">
+            <img src="~/img/MyLogo.svg" style="width: 5rem; cursor: pointer;"> <name>Ryan's awesome Site</name>
+        </a>
+        <a asp-controller="Home" asp-action="Calculator" class="btn-portfolio">Go To Calculator</a>
+
+
+    </header>
+
+
+    @RenderBody()
+
+
+    <!--Scripts for bootstrap and my own js-->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/calculator.js"></script>
+</body>
+</html>

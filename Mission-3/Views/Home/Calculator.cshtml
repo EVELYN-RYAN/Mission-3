@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.title = "Grade Calculator";
+}
+@model CalculatorModel
+<br />
+<br />
+<br />
+<form method="post">
+    <h3>Grade Calculator</h3>
+    <label for="pts1">Assignments &nbsp;</label>
+    <input id="pts1" asp-for="Assignments" type="number" max="100">&nbsp;% <br>
+
+    <label for="pts2">Group Project &nbsp;</label>
+    <input id="pts2" asp-for="GroupProject" type="number" max="100">&nbsp;% <br>
+
+    <label for="pts3">Quizzes &nbsp;</label>
+    <input id="pts3" asp-for="Quizzes" type="number" max="100">&nbsp;% <br>
+
+    <label for="pts4">Exams &nbsp;</label>
+    <input id="pts4" asp-for="Exams" type="number" max="100">&nbsp;% <br>
+
+    <label for="pts5">INTEX &nbsp;</label>
+    <input id="pts5" asp-for="Intex" type="number" max="100">&nbsp;% <br><br>
+
+    <button id="grade" asp-for="submit">Calculate</button>
+    <div asp-validation-summary="All"></div>
+</form>
